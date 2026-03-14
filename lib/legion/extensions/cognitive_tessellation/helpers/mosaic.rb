@@ -85,7 +85,7 @@ module Legion
           def compute_fit(tile_a, tile_b)
             shape_match = tile_a.shape == tile_b.shape ? 0.2 : 0.0
             type_match  = tile_a.tile_type == tile_b.tile_type ? 0.1 : 0.0
-            base_fit    = 0.5 + shape_match + type_match + rand * 0.2
+            base_fit    = 0.5 + shape_match + type_match + (rand * 0.2)
             tile_a.adjust_fit!(base_fit)
           end
         end

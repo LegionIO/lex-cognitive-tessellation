@@ -93,7 +93,7 @@ RSpec.describe Legion::Extensions::CognitiveTessellation::Helpers::Mosaic do
     it 'returns hash with mosaic stats' do
       h = mosaic.to_h
       expect(h).to include(:id, :domain, :tile_count, :total_coverage, :average_fit,
-                            :coherence, :uniformity, :gaps, :seamless, :complete)
+                           :coherence, :uniformity, :gaps, :seamless, :complete)
     end
   end
 end

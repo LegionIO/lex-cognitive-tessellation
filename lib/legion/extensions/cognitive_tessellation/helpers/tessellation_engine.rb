@@ -90,19 +90,19 @@ module Legion
 
           def tessellation_report
             {
-              total_tiles:      @tiles.size,
-              total_mosaics:    @mosaics.size,
-              overall_coverage: overall_coverage,
-              coverage_label:   Constants.label_for(COVERAGE_LABELS, overall_coverage),
-              overall_fit:      overall_fit,
-              fit_label:        Constants.label_for(FIT_LABELS, overall_fit),
+              total_tiles:       @tiles.size,
+              total_mosaics:     @mosaics.size,
+              overall_coverage:  overall_coverage,
+              coverage_label:    Constants.label_for(COVERAGE_LABELS, overall_coverage),
+              overall_fit:       overall_fit,
+              fit_label:         Constants.label_for(FIT_LABELS, overall_fit),
               overall_coherence: overall_coherence,
-              gap_density:      gap_density,
-              gapped_count:     gapped_tiles.size,
-              seamless_count:   seamless_tiles.size,
-              isolated_count:   isolated_tiles.size,
-              domain_coverage:  domain_coverage,
-              mosaics:          @mosaics.values.map(&:to_h)
+              gap_density:       gap_density,
+              gapped_count:      gapped_tiles.size,
+              seamless_count:    seamless_tiles.size,
+              isolated_count:    isolated_tiles.size,
+              domain_coverage:   domain_coverage,
+              mosaics:           @mosaics.values.map(&:to_h)
             }
           end
 

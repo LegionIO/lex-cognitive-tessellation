@@ -18,7 +18,7 @@ module Legion
             @coverage    = (coverage || DEFAULT_COVERAGE).to_f.clamp(0.0, 1.0)
             @fit_score   = (fit_score || 0.5).to_f.clamp(0.0, 1.0)
             @adjacent_ids = []
-            @created_at  = Time.now.utc
+            @created_at = Time.now.utc
           end
 
           def expand!(amount = COVERAGE_GROWTH)

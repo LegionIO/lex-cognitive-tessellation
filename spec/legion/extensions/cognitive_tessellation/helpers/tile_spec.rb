@@ -132,7 +132,7 @@ RSpec.describe Legion::Extensions::CognitiveTessellation::Helpers::Tile do
     it 'returns a hash with all fields' do
       h = tile.to_h
       expect(h).to include(:id, :tile_type, :shape, :domain, :coverage, :fit_score,
-                            :effective_coverage, :adjacent_count, :created_at)
+                           :effective_coverage, :adjacent_count, :created_at)
     end
   end
 end
